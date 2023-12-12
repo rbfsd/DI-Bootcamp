@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    margin-left: 10px;
+}
+
+div,
+footer {
+    display: inline-block;
+    height: 100Px;
+}
+
+.container {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.left,
+.right,
+footer {
+    border: 3px solid black;
+}
+
+.left {
+    background-color: palevioletred;
+    width: 35%;
+    margin-right: 3%
+}
+
+.right {
+    background-color: lightblue;
+    width: 60%;
+}
+
+footer {
+    background-color: yellow;
+    width: 98.5%
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin-left: 10px;
+}

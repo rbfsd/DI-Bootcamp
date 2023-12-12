@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasin de Vêtements pour Hommes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magasin de Vêtements pour Hommes</h1>
+    </header>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Chemises</a>
+        <a href="#">Chaussures</a>
+        <a href="#">Pantalons</a>
+        <!-- Ajoutez d'autres catégories selon vos besoins -->
+    </nav>
+
+    <section>
+        <div class="card">
+            <img src="chemise.jpg" alt="Chemise en coton">
+            <h2>Chemise en coton</h2>
+            <p>Couleur : Bleu Marine</p>
+            <p>Prix : $49.99</p>
+        </div>
+
+        <div class="card">
+            <img src="chaussures.jpg" alt="Chaussures en cuir">
+            <h2>Chaussures en cuir</h2>
+            <p>Couleur : Marron</p>
+            <p>Prix : $99.99</p>
+        </div>
+
+        <!-- Ajoutez d'autres cartes de produits selon vos besoins -->
+    </section>
+
+    <footer>
+        &copy; 2023 Magasin de Vêtements pour Hommes
+    </footer>
+</body>
+</html>

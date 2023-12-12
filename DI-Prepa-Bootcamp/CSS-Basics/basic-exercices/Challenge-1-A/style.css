@@ -1,0 +1,50 @@
+body {
+    background-color: #e2ac7f;
+}
+
+#wrap {
+    background-color: bisque;
+    margin: 0 auto;
+    width: 700px;
+    border: 4px dotted black;
+}
+
+div {}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    border-bottom: 4px dotted black;
+    font-family: 'Bebas Neue', 'Konkhmer Sleokchher', sans-serif;
+    padding: 8px;
+    margin-top: 0;
+}
+
+p {
+    padding-left: 8px;
+}
+
+ul {
+    /* text-align: center; */
+}
+
+li {
+    display: block;
+    text-align: center;
+}
+
+li::first-letter {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+}

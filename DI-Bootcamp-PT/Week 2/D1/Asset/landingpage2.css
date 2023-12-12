@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    /* width: 70vw; */
+    height: auto;
+    padding: 10px;
+}
+
+header h2{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    text-transform: uppercase;
+    font-size: 10px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 10px; */
+}
+
+form label{
+    display: grid;
+    padding: 10px;
+}

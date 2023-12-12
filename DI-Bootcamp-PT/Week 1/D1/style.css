@@ -1,0 +1,39 @@
+ul,li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+h4{
+    font-weight: bolder;
+    color: salmon;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+tr, td{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+iframe{
+    width: 300px;
+    height: 300px;
+}
+ 
+input{
+    display: block;
+    align-items: center;
+}

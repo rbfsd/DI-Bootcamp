@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+#wrap {
+    width: 800px;
+    /* Set a fixed width for the wrap */
+    margin: 0 auto;
+    /* Center the wrap */
+    background-color: blanchedalmond;
+}
+
+div#nav {
+    float: left;
+    /* Float the navigation div to the left */
+    width: 200px;
+    /* Set a width for the navigation div */
+    height: 458px;
+    background-color: rgba(78, 78, 187, 0.699);
+}
+
+#content {
+    margin-left: 220px;
+    /* Adjust margin for content to create space next to the navigation */
+}
+
+#content h1 {
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+#content p {
+    line-height: 1.5;
+    /* Example: Set line height for paragraphs */
+    text-align: center;
+}
+
+#content ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#content li::first-letter #nav ul {
+    padding: 0;
+    text-align: center;
+
+}
+
+#nav li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    /* Add some spacing between list items */
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+p.copyright a {
+    color: #777;
+    /* Example: Set color for the copyright text */
+    font-size: 0.8em;
+    /* Example: Adjust font size for the copyright text */
+}

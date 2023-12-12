@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #fff;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.box{
+    padding: 5px;
+    margin: 5px;
+}
+
+.blue{
+    background-color: aqua;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+    grid-column: span 3;
+}
