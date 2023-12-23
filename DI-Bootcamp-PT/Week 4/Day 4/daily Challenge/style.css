@@ -1,0 +1,26 @@
+.planet {}
+
+
+.mercury {
+    background-color: #fff;
+}
+
+.venus {
+    background-color: aqua;
+}
+
+.earth {
+    background-color: beige;
+}
+
+.mars {
+    background-color: brown;
+}
+
+.jupiter {
+    background-color: blanchedalmond;
+}
+
+.sat {
+    background-color: yellow;
+}
