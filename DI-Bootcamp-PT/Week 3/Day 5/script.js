@@ -138,13 +138,56 @@
 // console.log(database[0].username);
 // console.log(database[1].username);
 
-let newsfeed = [
-  { username: "DANI", timeline: "1997-2023" },
-  { username: "sarah", timeline: "1997-2023" },
-  { username: "greg", timeline: "1997-2023" },
-];
+// let newsfeed = [
+//   { username: "DANI", timeline: "1997-2023" },
+//   { username: "sarah", timeline: "1997-2023" },
+//   { username: "greg", timeline: "1997-2023" },
+// ];
 
-console.log(newsfeed);
+// console.log(newsfeed);
 // console.log(newsfeed[0].username);
 // console.log(newsfeed[1].username);
 // console.log(newsfeed[2].username);
+
+// For loop to iterate from 0 to 15
+for (let i = 0; i <= 15; i++) {
+  // Check if the current number is even or odd
+  if (i % 2 === 0) {
+    console.log(i + " is even");
+  } else {
+    console.log(i + " is odd");
+  }
+}
+
+let names = ["john", "sarah", 23, "Rudolf", 34];
+
+console.log("Partie 1 :");
+for (let i = 0; i < names.length; i++) {
+  // Vérifier si l'élément n'est pas une chaîne
+  if (typeof names[i] !== "string") {
+    continue; // Passer à l'itération suivante si ce n'est pas une chaîne
+  }
+
+  // Vérifier si la première lettre est en majuscule
+  if (names[i][0] !== names[i][0].toUpperCase()) {
+    // Mettre la première lettre en majuscule
+    names[i] = names[i][0].toUpperCase() + names[i].slice(1);
+  }
+
+  // Afficher le nom
+  console.log(names[i]);
+}
+console.log("\nPartie 2 :");
+let j = 0;
+
+do {
+  // Vérifier si l'élément n'est pas une chaîne
+  if (typeof names[j] !== "string") {
+    break; // Sortir de la boucle si ce n'est pas une chaîne
+  }
+
+  // Afficher le nom
+  console.log(names[j]);
+
+  j++; // Incrémenter pour la prochaine itération
+} while (j < names.length);
