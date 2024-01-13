@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <!--Ex 1-->
+        <!-- <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        </style> -->
+        <!--Ex 2-->
+        <!-- <style>
+            #container {
+              width: 400px;
+              height: 400px;
+              position: relative;
+              background: yellow;
+            }
+            #animate {
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              background-color: red;
+            }
+            </style> -->
+
+            <!--Ex 3-->
+            <style>
+                #target {
+                  width: 200px;
+                  height: 200px;
+                  position: relative;
+                  background: yellow;
+                }
+                #box {
+                  width: 50px;
+                  height: 50px;
+                  position: absolute;
+                  background-color: red;
+                }
+                </style>
+    </head>
+    <body>
+        <!--Ex 1-->
+        <!-- <div id="container"></div>
+        <button id="clear">Clear Interval</button> -->
+
+        <!--Ex 2-->
+        <!-- <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div> -->
+
+        <!-- Ex 3 -->
+        <div id="target" ondrop="drop(event)"
+        ondragover="allowDrop(event)"></div>
+
+        <br>
+
+        <div id="box" draggable="true" 
+        ondragstart="drag(event)"></div>
+
+        <!-- <script src="exercicesXpW5D4.js"> -->
+        <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+        </script>
+
+        <!--</script>-->
+    </body>
+    </html>

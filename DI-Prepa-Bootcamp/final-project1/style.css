@@ -1,80 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: sans-serif;
-}
-
-header {
-    background-color: grey;
-    height: 50px;
-    padding: 8px 4px;
-}
-
-nav {}
-
-
-ul {}
-
-li {
-    display: inline-block;
-    margin-right: 10px;
-    text-align: start;
-}
-
-.fsection {}
-
-h1 {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    padding: 20px;
-}
-
-.social-media {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 400px;
-    max-width: 900px;
+    justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    justify-content: center;
+    background-image: url(images/taylor-brandon-Y8r0RTNrIWM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.card {
-    width: 250px;
-    height: 200px;
-    /* background-color:; */
-    border: 6px solid gold;
-}
-
-h3 {
-    color: red;
-    text-align: center;
-}
-
-img {}
-
-
-footer {}
-
-.press {
-    display: flex;
-    margin: auto;
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
-    background-color: rgb(210, 101, 101);
-    color: white;
+    padding: 30px 40px;
+    display: grid;
+    gap: 20px;
+    align-items: start;
+    font-family: 'Poppins', sans-serif;
+}
+
+header>h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif color: black;
+    text-align: center;
     padding: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-
+header>img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-a:hover {
-    color: red;
+section.biography {
+    line-height: 1.5;
+    text-align-last: left;
+}
+
+section.biography>h2 {
+    font-weight: bold;
+}
+
+section.works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+div.card {
+    grid-template-columns: repeat(2fr);
+    height: auto;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.card>h3,
+p {
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
 }
