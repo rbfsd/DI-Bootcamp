@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Quote Generator</title>
+</head>
+
+<body>
+
+
+    <section id="quote-section">
+        <!-- Quotes will be displayed here -->
+    </section>
+    <button id="generate-quote">Generate Quote</button>
+
+    <!-- Add this form below the existing content in index.html -->
+    <form id="add-quote-form">
+        <label for="quote-input">Quote:</label>
+        <input type="text" id="quote-input" required>
+
+        <label for="author-input">Author:</label>
+        <input type="text" id="author-input" required>
+
+        <button type="button" id="add-quote-btn">Add Quote</button>
+    </form>
+
+    <!-- Add this form below the existing content in index.html -->
+    <form id="filter-form">
+        <label for="author-filter">Filter by Author:</label>
+        <input type="text" id="author-filter" required>
+
+        <button type="button" id="filter-btn">Filter Quotes</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#quote-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#add-quote-form,
+#filter-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#generate-quote {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+#add-quote-btn,
+#filter-btn {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+}
+
+#add-quote-btn:hover,
+#filter-btn:hover,
+#generate-quote:hover {
+    background-color: #0b7dda;
+}
