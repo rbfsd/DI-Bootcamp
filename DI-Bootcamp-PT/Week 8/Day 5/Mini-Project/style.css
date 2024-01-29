@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,18 +14,34 @@ body {
 
 #quote-section {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #3498db;
     padding: 20px;
     margin-bottom: 20px;
     max-width: 600px;
     width: 100%;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#quote-section:hover {
+    background-color: #ecf0f1;
 }
 
 button {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
 }
 
 #add-quote-form,
@@ -34,10 +50,12 @@ button {
     flex-direction: column;
     max-width: 600px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 label {
     margin-bottom: 5px;
+    color: #333;
 }
 
 input {
@@ -48,20 +66,19 @@ input {
 }
 
 #generate-quote {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
+    background-color: #2ecc71;
+}
+
+#generate-quote:hover {
+    background-color: #27ae60;
 }
 
 #add-quote-btn,
 #filter-btn {
-    background-color: #2196f3;
-    color: #fff;
-    border: none;
+    background-color: #e74c3c;
 }
 
 #add-quote-btn:hover,
-#filter-btn:hover,
-#generate-quote:hover {
-    background-color: #0b7dda;
+#filter-btn:hover {
+    background-color: #c0392b;
 }

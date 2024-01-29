@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice XP</title>
+</head>
+
+<body>
+    <!-- exercice 1 HTML Form -->
+    <form action="#" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- Where will the sent data appear?
+    in the URL -->
+
+    <!-- exercice 2 -->
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- The form data will be included in the 
+        request payload for a POST request and won't be visible in the URL like in a GET request. -->
+
+</body>
+
+</html>
