@@ -1,0 +1,20 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.deleteButton {
+    margin-top: 5px;
+    cursor: pointer;
+}
