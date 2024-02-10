@@ -8,6 +8,6 @@ body {
 }
 
 .container {
-    width: 100vh;
-    background-color: gainsboro;
+    height: 100vh;
+    background-color: rgb(118, 157, 139);
 }

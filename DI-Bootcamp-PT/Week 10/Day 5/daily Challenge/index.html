@@ -4,24 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <title>Currency Converter</title>
 </head>
 
 <body>
 
-    <h1>Currency Converter</h1>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <h2>from</h2>
+        <select name="currencyFrom" id="currencyFrom">
+            <option value="USD">US Dollar ($)</option>
+            <option selected value="EUR">Euro (€)</option>
+            <option selected value="Shekel">Shekel( )</option>
 
-    <form action="">
-        From:
-        <label for="from">Currency Code: </label>
-        <input type="text" id="from" name="from"><br><br>
-        To:
-        <label for="to">Currency Code: </label>
-        <input type="text" id="to" name="to"><br><br>
-        Amount:
-        <input type="number" step="any" id="amount" name="amount">
-        <button type="submit">Convert!</button>
-    </form>
+        </select><br>
+        <h2>To</h2>
+        <h3>Amount</h3>
+        <button><i class="fas fa-conveyor-belt    "></i></button>
+    </div>
+
+
+
 </body>
 
 </html>
