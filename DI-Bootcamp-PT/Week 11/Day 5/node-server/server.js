@@ -1,8 +1,14 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const { products } = require("./config/db");
 // initialize express.js
 
 const app = express();
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
 
 app.listen(3001);
 
@@ -36,4 +42,29 @@ app.get("/api/search", (req, res) => {
 
   //   http://localhost:3001/api/search?name=ip
   res.json(filterproducts);
+});
+
+/** POST, PUT, DELETE, UPDATE */
+app.put("/api/products", (req, res) => {
+  const { name, price } = req.body;
+
+  const indx = products.findIndex((item) => item.id == id);
+
+  products[indx] = { ...products[indx], name, price };
+  res.json(products);
+});
+
+/**create a new product */
+app.post("/api/products", (req, res) => {
+  console.log(req.body);
+  const { name, price } = req.body;
+
+  const newProduct = {
+    id: products.length + 1,
+    name,
+    price,
+  };
+
+  products.push(newProduct);
+  res.json(products);
 });
