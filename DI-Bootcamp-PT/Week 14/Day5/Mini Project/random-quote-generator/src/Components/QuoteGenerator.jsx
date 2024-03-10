@@ -31,32 +31,44 @@ const QuoteGenerator = () => {
     setQuoteColor(getRandomColor());
     setButtonColor(getRandomColor());
   };
-
   return (
-    <body
+    <div
       style={{
         backgroundColor: backgroundColor,
+        width: "800px",
+        height: "280px",
         padding: "20px",
         textAlign: "center",
         borderRadius: "10px",
+        position: "relative", // Ajout de la propriété position
       }}
     >
-      <h2 style={{ color: quoteColor }}>{currentQuote.quote}</h2>
-      <p style={{ color: quoteColor, fontStyle: "italic" }}>
-        - {currentQuote.author}
-      </p>
-      <button
-        onClick={generateNewQuote}
+      <div
         style={{
-          backgroundColor: buttonColor,
-          padding: "10px",
-          borderRadius: "5px",
-          cursor: "pointer",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
         }}
       >
-        Générer une nouvelle citation
-      </button>
-    </body>
+        {/* Utilisation d'une div interne pour centrer le contenu */}
+        <h2 style={{ color: quoteColor }}>{currentQuote.quote}</h2>
+        <p style={{ color: quoteColor, fontStyle: "italic" }}>
+          - {currentQuote.author}
+        </p>
+        <button
+          onClick={generateNewQuote}
+          style={{
+            backgroundColor: buttonColor,
+            padding: "10px",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          Générer une nouvelle citation
+        </button>
+      </div>
+    </div>
   );
 };
 
