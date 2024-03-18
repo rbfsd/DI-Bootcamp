@@ -1,0 +1,7 @@
+.container {
+    max-width: 50%;
+    padding-top: 25%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
