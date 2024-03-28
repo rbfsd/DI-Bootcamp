@@ -1,0 +1,17 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+    /* Text color for light theme */
+}
+
+.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+    /* Text color for dark theme */
+}
