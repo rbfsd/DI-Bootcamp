@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji Guessing Game</title>
+</head>
+
+<body>
+    <h1>Emoji Guessing Game</h1>
+    <div id="game"></div>
+    <script>
+        let score = 0;
+
+        async function loadGame() {
+            const response = await fetch('/emoji');
+            const data = await response.json();
+            const { emoji, options } = data;
+
+            const gameDiv = document.getElementById('game');
+            gameDiv.innerHTML = `
+                <div>
+                    <p>Guess the name of this emoji: ${emoji}</p>
+                    ${options.map(option => `<button onclick="submitGuess('${emoji}', '${option}')">${option}</button>`).join('')}
+                </div>
+                <p>Score: ${score}</p>
+            `;
+        }
+
+        async function submitGuess(emoji, guess) {
+            const response = await fetch('/guess', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ emoji, guess })
+            });
+            const data = await response.json();
+            if (data.correct) {
+                alert('Correct!');
+                score++;
+            } else {
+                alert(`Incorrect! The correct answer was ${data.correctName}`);
+            }
+            loadGame();
+        }
+
+        loadGame();
+    </script>
+</body>
+
+</html>
