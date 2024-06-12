@@ -1,0 +1,9 @@
+[
+    {"id": 1, "name": "Superman", "image": "superman.png"},
+    {"id": 2, "name": "Batman", "image": "batman.png"},
+    {"id": 3, "name": "Wonder Woman", "image": "wonder_woman.png"},
+    {"id": 4, "name": "Flash", "image": "flash.png"},
+    {"id": 5, "name": "Green Lantern", "image": "green_lantern.png"},
+    {"id": 6, "name": "Aquaman", "image": "aquaman.png"}
+  ]
+  
