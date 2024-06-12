@@ -1,0 +1,36 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+.book-card img {
+  width: 100%;
+}
